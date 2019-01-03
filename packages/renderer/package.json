@@ -1,0 +1,6 @@
+{
+  "name": "@onetron/renderer",
+  "dependencies": {
+    "@one/core": "*"
+  }
+}

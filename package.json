@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "ts-lint -p tsconfig.json -c tslint.json",
+    "bootstrap": "lerna bootstrap",
+    "build": "rollup -c node:@zerollup/rollup-preset-ts",
+    "watch": "rollup -w -c node:@zerollup/rollup-preset-ts",
+    "publish": "yarn build && lerna publish --conventional-commits --yes",
+    "test": "jest",
+    "clean": "rm -rf packages/*/.rpt2_cache packages/*/lib"
+  },
+  "devDependencies": {
+    "@one/common": "^1.5.1",
+    "@one/core": "^1.5.2",
+    "@one/testing": "^1.5.1",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.2",
+    "@zerollup/rollup-preset-ts": "^1.6.5",
+    "@zerollup/ts-transform-paths": "^1.6.5",
+    "electron": "^4.0.0",
+    "jest": "23.6.0",
+    "jest-extended": "^0.11.0",
+    "lerna": "^3.4.3",
+    "reflect-metadata": "^0.1.12",
+    "rollup": "^0.67.4",
+    "rxjs": "^6.2.2",
+    "ts-jest": "23.10.4",
+    "typescript": "^3.1.6"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

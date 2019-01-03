@@ -1,0 +1,20 @@
+{
+  "name": "@onetron/main",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "rollup -c node:@zerollup/rollup-preset-ts"
+  },
+  "peerDependencies": {
+    "@one/core": "*",
+    "rxjs": "*",
+    "reflect-metadata": "*",
+    "electron": "*"
+  },
+  "dependencies": {
+    "@one/common": "*"
+  }
+}

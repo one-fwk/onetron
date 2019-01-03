@@ -1,0 +1,14 @@
+{
+  "lerna": "2.2.0",
+  "command": {
+    "publish": {
+      "npmClient": "yarn",
+      "message": "chore(release): %s [ci skip]",
+      "ignoreChanges": ["**/*spec.ts"]
+    }
+  },
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "1.1.1"
+}
